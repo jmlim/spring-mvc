@@ -23,27 +23,28 @@
 			commandName="user" class="form-signup">
 
 			<label for="user_id">UserId: </label>
-			<form:input path="uid" id="user_id" required="required"
-				autofocus="autofocus" class="form-control" placeholder="Your id..." />
+			<form:input path="uid" id="user_id" autofocus="autofocus"
+				class="form-control" placeholder="Your id..."
+				value="#{currentUser.uid}" />
 			<form:errors path="uid" cssclass="error"></form:errors>
 			<br />
 
 			<label for="email">Email: </label>
-			<form:input path="email" id="email" required="required"
-				autofocus="autofocus" class="form-control"
-				placeholder="Your email..." />
+			<form:input path="email" id="email" autofocus="autofocus"
+				class="form-control" placeholder="Your email..."
+				value="#{currentUser.email}" />
 			<form:errors path="email" cssclass="error"></form:errors>
 			<br />
 
 			<label for="name">Name: </label>
-			<form:input path="name" id="name" required="required"
-				class="form-control" placeholder="Your name..." />
+			<form:input path="name" id="name" class="form-control"
+				placeholder="Your name..." value="#{currentUser.name}" />
 			<form:errors path="name" cssclass="error"></form:errors>
 			<br />
 
 			<label for="password">Password: </label>
-			<form:password path="password" id="password" required="required"
-				class="form-control" placeholder="Your password..."></form:password>
+			<form:password path="password" id="password" class="form-control"
+				placeholder="Your password..."></form:password>
 			<form:errors path="password" cssclass="error"></form:errors>
 			<br />
 			<input type="submit"
