@@ -1,0 +1,12 @@
+
+
+validation
+http://codetutr.com/2013/05/28/spring-mvc-form-validation/
+
+git
+http://blog.beany.co.kr/archives/3407
+http://deepseadk.egloos.com/1759843
+
+The . in the git add . command refers to the "current directory". So, running git add . will add all the files in the current directory and its subdirectories. You should ensure that you are in the correct directory before running git add.
+
+git add -A is what you want. It will add everything.
